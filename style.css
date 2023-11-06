@@ -1,0 +1,511 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(231, 231, 231);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    margin: 0 6%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 106, 255);
+    font-weight: 500;
+    font-size: .875em;
+}
+
+
+/* ==========================
+Layout 
+===========================*/
+
+/* Header */
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.header-link {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+}
+
+.margin--right {
+    margin-right: 1em;
+}
+
+.margin--left {
+    margin-left: 1em;
+}
+
+.profile-picture {
+    width: 2em;
+    margin: 1em;
+}
+
+.logo {
+    width: 1.375em;
+    margin-right: 0.875em;
+}
+
+/*== main ==*/
+
+/* stats */
+
+.stats {
+    width: 100%;
+    background: linear-gradient(45deg, rgb(138, 163, 211), rgb(228, 246, 253));
+}
+
+.greetings {
+    display: flex;
+    align-items: center;
+    padding-top: 1.2em;
+    margin-left: 6%;
+}
+
+.current-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.points {
+    width: 26%;
+    margin: 0.5em auto 1.25em auto;
+}
+
+.point-info {
+    display: flex;
+    align-items: center;
+}
+
+.info-button {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 0.625em;
+    border-radius: 50%;
+    border: solid #1fb800 1px;
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
+
+/* nav */
+nav {
+    padding: 1em 1em 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Featured Event */
+
+.featured-event {
+    text-align: center;
+    background-color: rgb(61, 57, 57);
+}
+
+.featured-event-main {
+    padding: 3rem;
+    color: white;
+}
+
+.checkmark {
+    width: 1.5rem;
+    margin: 0.2em;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+.streak-checkmarks {
+    display: flex;
+    justify-content: end;
+    margin: 1em 0;
+}
+
+/* Activities */
+
+.activity-container {
+    display: block;
+    margin: 0 auto;
+}
+
+.daily-activity {
+    width: 90%;
+    background-color: white;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.activity-points {
+    display: flex;
+    justify-content: end;
+    margin: 0;
+}
+
+.activity-points p {
+    font-size: large;
+    margin: 0;
+}
+
+.activity {
+    display: flex;
+}
+
+.activity-image {
+    width: 4em;
+    margin: 1rem;
+}
+
+.activity-heading {
+    margin: 0;
+}
+
+.activity-info {
+    overflow: hidden;
+}
+
+/* Rewards */
+
+.reward-card {
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+}
+
+.header-with-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.reward-image {
+    width: 8em;
+    margin: 0 auto;
+}
+
+.progress-bar .progress {
+    height: 0.5em;
+}
+
+.progress-bar {
+    margin: auto;
+    width: 80%;
+    border-radius: 1em;
+    margin-right: 0.25em;
+    background-color: rgba(168, 182, 250, 0.3);
+    box-shadow: inset 0 1px 3px rgba(97, 107, 159, 0.3);
+}
+
+.progress {
+    display: block;
+    background-color: orange;
+    border-radius: 1em;
+}
+
+
+/* Footer */
+
+hr {
+    margin: 0 0 1em 0;
+    width: 100%;
+}
+
+.help-link-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6em;
+    padding: 0 6%;
+}
+
+.help-link {
+    font-weight: 400;
+    font-size: 1em;
+    padding: 0 0 1em;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    margin: 0 auto;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    margin: 0 6%;
+}
+
+.lang p {
+    margin-left: 1em;
+    color: #808080;
+}
+
+.footer-link-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+/*=============================
+Typography
+=============================*/
+
+.header-link {
+    font-size: 1.175em;
+    font-weight: 400;
+    color: rgb(31, 30, 33);
+}
+
+.greetings-heading {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 1em 0 0;
+
+}
+
+.small-text {
+    font-size: 0.75em;
+}
+
+.points-value {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.nowrap-ellipsis {
+    /*Parent should have overflow: hidden;*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.nav-link {
+    padding: 0.75em 0.5em;
+    color: rgb(148, 148, 148);
+    font-weight: 400;
+}
+
+.current-page {
+    background-color: rgb(23, 109, 248);
+    color: rgb(255, 253, 253);
+}
+
+.white-link {
+    color: white;
+}
+
+.footer-link-container,
+.footer-link-container a {
+    color: grey;
+    font-weight: 400;
+}
+
+.footer-link-container p {
+    margin: 0;
+    font-size: .875em;
+}
+
+.section-heading {
+    font-size: 1.175em;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+@media(min-width: 550px)
+
+/* and (max-width: 750px) */
+    {
+
+    .activity-container {
+        display: inline-block;
+    }
+
+    .daily-activity {
+        display: inline-block;
+        width: 40%;
+        height: 20rem;
+    }
+
+    .activity {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activity-image {
+        margin: 0 auto 2rem auto;
+    }
+
+    .activity-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 12rem;
+        margin-bottom: 0.5em;
+    }
+
+    .activity-link {
+        display: block;
+        margin-top: auto;
+    }
+
+    .reward-card {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .reward-card-heading {
+        margin: 0 0 0.75em 0;
+    }
+
+    .reward-image {
+        margin: 0 2em 1em 0;
+        width: 8em;
+    }
+
+    .reward-card-status {
+        margin: 0.5em 0;
+    }
+
+    .progress-bar {
+        margin: 0;
+    }
+
+    .suggested-rewards {
+        width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .suggested-rewards-image {
+        max-width: 20rem;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+
+    .column-card {
+        display: inline-block;
+        width: 40%;
+        height: 20rem;
+        padding: 1em;
+
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    .column-card img {
+        max-height: 8rem;
+        margin: 0 2em 1em 0;
+    }
+
+    .column-card-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 12em;
+        margin-bottom: 0.5em;
+    }
+
+    .column-card-info a {
+        display: block;
+        margin-top: auto;
+        margin-bottom: 1em;
+    }
+
+    .footer-link-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-link {
+        margin-right: 1em;
+    }
+}
+
+@media (min-width: 770px) {
+    .daily-activity,
+    .column-card {
+        width: 27%;
+        display: inline-block;
+    }
+
+    .milestones {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .goal, .last-reward {
+        display: inline-block;
+        width: 48%;
+    }
+
+    .milestones .reward-card {
+        margin: 0;
+        padding: 0.5em;
+        overflow: hidden;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    .milestones .reward-card h3 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .milestones .reward-card .reward-image {
+        object-fit: contain;
+        width: 8em;
+        height: 8em;
+        margin-right: 1em;
+    }
+
+    .reward-card-info {
+        overflow: hidden;
+    }
+
+    .progress-bar {
+        width: 48%;
+    }
+
+}
+
+@media (min-width: 1080px) {
+    .daily-activity,
+    .column-card {
+        width: 20%;
+        display: inline-block;
+    }
+}
